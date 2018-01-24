@@ -1,0 +1,82 @@
+@import "./resize.css";
+@import "./_variate.less";
+@import "./_mixture.less";
+@import "./_argument.less";
+
+//页面的公共样式
+html, body {
+  background-color: @bgMinColor;
+  height: 100%;
+}
+
+.mianContainer {
+  width: 19.2rem;
+  height: 100%;
+  background-color: @secNavBgColor;
+  padding: 0.3rem 0.6rem  0.64rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .mianColor {
+    background-color: @bgMinColor;
+  }
+}
+
+.contentContainer {
+  background-color: @bgMinColor;
+}
+
+div.selectContainer {
+  margin: 0.22rem 0.3rem 0 0.3rem;
+  .searchBox {
+    .borderbox;
+    border: 1px solid @searchBoxBorderColor;
+    background-color: @searchBoxBgColor;
+    padding: 0.28rem 0;
+    margin-bottom: 0.28rem;
+  }
+}
+
+
+.btnContainer {
+  display: inline-block;
+}
+
+//按钮的颜色
+.btnSpan {
+  display: inline-block;
+  min-width: 1rem;
+  padding: 0 0.32rem;
+  font-size: 0.16rem;
+  line-height: 0.4rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+span.btnSpan.info {
+  background-color: @btnInfoColor;
+  color: #333;
+}
+
+span.btnSpan.query {
+  background-color: @btnQueryBgColor;
+  color: #fff;
+}
+
+span.btnSpan.download {
+  background-color: @btnExportBgColor;
+  color: #fff;
+}
+
+
+//修改elementui的样式
+div.el-select {
+  width: 2.2rem;
+  height: 0.44rem;
+}
+
+li.el-select-dropdown__item.selected {
+
+}
+span.el-checkbox__label{
+  font-size: @mianFontColor;
+}

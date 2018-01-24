@@ -1,0 +1,45 @@
+@import "./_variate.less";
+
+/* 复选框 */
+
+.checkBox {
+  display: none;
+  +label {
+    background-color: @checkBoxBgColor;
+    border: .01rem solid @checkBoxBorderColor;
+    box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.05), inset 0rem -.15rem .1rem -.12rem rgba(0, 0, 0, 0.05);
+    padding: .08rem;
+    display: inline-block;
+    position: relative;
+    user-select:none;
+    vertical-align: text-bottom;
+    &:after {
+      content: '';
+      position: absolute;
+      top: .02rem;
+      left: .02rem;
+      right: .02rem;
+      bottom: .02rem;
+      border: .01rem solid @checkBoxBorderColor;
+    }
+    &:active {
+      box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.05), inset 0rem .01rem .03rem rgba(0, 0, 0, 0.1);
+    }
+  }
+  &:checked+label {
+    background-color: @checkBoxBgColor;
+    border: .01rem solid @checkBoxBorderColor;
+    box-shadow: 0 .01rem .02rem rgba(0, 0, 0, 0.05), inset 0rem -.15rem .1rem -.12rem rgba(0, 0, 0, 0.05), inset -.15rem .1rem -.12rem rgba(255, 255, 255, 0.1);
+    color: #243441;
+    &:after {
+      content: '';
+      position: absolute;
+      top: .02rem;
+      left: .02rem;
+      right: .02rem;
+      bottom: .02rem;
+      background: @checkBoxBorderColor;
+      vertical-align: text-top;
+    }
+  }
+}
