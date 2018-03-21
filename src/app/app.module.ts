@@ -9,12 +9,16 @@ import { NgHeaderComponent } from './ng-header/ng-header.component';
 
 import { IndexRouter } from '../router/index-router';
 import { IntelligentAnalysisComponent } from './intelligent-analysis/intelligent-analysis.component';
+import { IntelligentDecisionComponent } from './intelligent-decision/intelligent-decision.component';
+import { IntelligentFeedbackComponent } from './intelligent-feedback/intelligent-feedback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgHeaderComponent,
-    IntelligentAnalysisComponent
+    IntelligentAnalysisComponent,
+    IntelligentDecisionComponent,
+    IntelligentFeedbackComponent
   ],
   imports: [
     BrowserModule,
